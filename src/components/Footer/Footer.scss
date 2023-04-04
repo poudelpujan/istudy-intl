@@ -1,0 +1,236 @@
+// footer {
+//   padding: 20px 0 12px 0;
+//   // height: 30vh;
+//   background: rgba($secondary, 0.9);
+
+//   .upper-footer {
+//     // background: thistle;
+//     position: relative;
+
+//     .footer-content {
+//       margin: 0;
+
+//       .contents {
+//         display: flex;
+//         flex-direction: column;
+//         padding: 2em 0;
+//         justify-content: center;
+
+//         .footer-widget {
+//           display: flex;
+//           flex-direction: column;
+//           gap: 2em;
+//           padding: 2em 0;
+//           background: $primary;
+//           .widget-title {
+//             font-size: $h4-sm;
+//             font-weight: 300;
+//             padding: 0.625em 0;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+.footer {
+  width: 100%;
+  position: relative;
+  // min-height: 100vh;
+  background-color: $secondary;
+  z-index: 10;
+  overflow: hidden;
+
+  .background {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    bottom: -50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.4;
+
+    .is__background-map {
+      position: relative;
+      width: 100%;
+
+      img {
+        position: relative; /* Ensure that child elements are positioned relative to this div */
+        // height: 400px; /* Set the desired height */
+        // background-size: cover; /* Scale the image to cover the div while preserving aspect ratio */
+        // background-position: top center; /* Center the image horizontally and vertically */
+        background-repeat: no-repeat; /* Prevent the image from repeating */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 120px 0;
+        flex-direction: column;
+        position: relative;
+        gap: 1em;
+
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center center;
+      }
+      // svg {
+      //   position: absolute;
+      //   z-index: 1;
+      //   display: block;
+      //   width: 140px;
+      //   height: 140px;
+      //   transform: translateZ(0);
+      //   color: #002f55;
+      //   transition: color 0.25s;
+      //   opacity: 0.2;
+      //   bottom: -3em;
+      //   left: -9px;
+      // }
+
+      &:after {
+        content: "";
+        position: absolute;
+        width: inherit;
+        background: $dark;
+        opacity: 0.5;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      @include mq(tablet) {
+        width: 80%;
+      }
+    }
+  }
+
+  .top-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+    @include mq(tablet) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    @include mq(tablet-wide) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      flex-basis: 100px;
+      padding: 2em 0;
+      justify-content: space-between;
+    }
+    .col {
+      display: flex;
+      height: auto;
+      width: 100%;
+      flex-direction: column;
+      padding: 1em 0;
+      gap: 2em;
+      justify-content: flex-start;
+
+      @include mq(tablet) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+
+      @include mq(tablet-wide) {
+        width: 31%;
+      }
+
+      .short-info {
+        .widget-title {
+          margin: 0;
+          padding: 0;
+          font-family: $Poppins;
+          padding: 20px 0px 5px 0px;
+          color: $white;
+          font-weight: normal;
+          text-transform: uppercase;
+          letter-spacing: 0.15em;
+
+          @include mq(tablet-wide) {
+            font-size: 22px;
+            // line-height: 17px;
+          }
+        }
+        .text-widget {
+          padding: 2em 0;
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .links {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        // background: red;
+        @include mq(tablet) {
+          gap: 2em;
+          // margin: 0 auto;
+        }
+      }
+      h1 {
+        margin: 0;
+        padding: 0;
+        font-family: $Poppins;
+        font-size: 12px;
+        line-height: 17px;
+        padding: 20px 0px 5px 0px;
+        color: $white;
+        font-weight: normal;
+        text-transform: uppercase;
+        letter-spacing: 0.25em;
+        @include mq(tablet-wide) {
+          font-size: 14px;
+          line-height: 2px;
+        }
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {
+          a {
+            color: $white;
+            font-size: 12px;
+            font-family: $Poppins;
+            font-weight: bold;
+            padding: 5px 0px 5px 0px;
+            cursor: pointer;
+            transition: 0.2s;
+            -webkit-transition: 0.2s;
+            -moz-transition: 0.2s;
+          }
+
+          @include mq(tablet-wide) {
+            font-size: 13px;
+          }
+          &:hover {
+            color: $white;
+            transition: 0.1s;
+            -webkit-transition: 0.1s;
+            -moz-transition: 0.1s;
+          }
+        }
+      }
+    }
+  }
+  .social {
+    ul {
+      li {
+        display: inline-block;
+        padding-right: 5px !important;
+      }
+    }
+  }
+  .clearfix {
+    clear: both;
+  }
+}

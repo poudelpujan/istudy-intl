@@ -1,0 +1,143 @@
+// .contact-container {
+//   max-width: 800px;
+//   margin: 0 auto;
+//   padding: 40px;
+
+//   .contact-heading {
+//     font-size: 36px;
+//     text-align: center;
+//     margin-bottom: 40px;
+//   }
+
+//   .profile-section {
+//     display: flex;
+//     align-items: center;
+//     margin-bottom: 40px;
+
+//     .profile-image {
+//       border-radius: 50%;
+//       margin-right: 40px;
+//     }
+
+//     .profile-info {
+//       flex: 1;
+
+//       .profile-name {
+//         font-size: 24px;
+//         margin-bottom: 8px;
+//         color: $dark;
+//       }
+
+//       .profile-role {
+//         font-size: 18px;
+//         margin-bottom: 16px;
+//         color: $dark;
+//       }
+
+//       .profile-contact-info {
+//         font-size: 16px;
+//         line-height: 1.5;
+//         color: $dark;
+
+//         i {
+//           margin-right: 8px;
+//         }
+//       }
+//     }
+//   }
+
+//   .contact-text {
+//     font-size: 16px;
+//     line-height: 1.5;
+//   }
+// }
+
+.contact-section {
+  padding: 0;
+  // width: 100%;
+
+  .contact-heading {
+    padding: 28px 0 30px 0;
+
+    h2 {
+      font-size: 36px;
+
+      margin-bottom: 40px;
+      margin: 0;
+      color: $dark;
+    }
+  }
+
+  .contacts {
+    font-family: $Poppins;
+    padding-bottom: 2em;
+
+    @include mq(tablet) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      gap: 10em;
+      align-items: start;
+    }
+    .contact {
+      display: flex;
+      flex-direction: column;
+      margin-right: 40px;
+      gap: 1em;
+      padding: 35px 0 80px 0;
+
+      .label {
+        color: $grey;
+        text-transform: uppercase;
+        font-size: $h1-md;
+        font-weight: 700;
+        margin-right: 16px;
+      }
+
+      a {
+        color: $dark;
+        text-decoration: none;
+        position: relative;
+
+        &:before,
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: -2px;
+          width: 0%;
+          height: 1px;
+          background: $white;
+          z-index: 1;
+        }
+        &:before {
+          left: 0;
+        }
+        &:after {
+          background: $white;
+          right: 0;
+          transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+        }
+
+        &:hover:before {
+          background: $white;
+          width: 100%;
+          transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+        }
+        &:hover:after {
+          background: transparent;
+          width: 100%;
+          transition: 0s;
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .contact-text {
+    font-size: $p-lg;
+    line-height: 1.5;
+    color: $dark;
+  }
+}

@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+$Poppins: "Poppins";
+$Montserrat: "Montserrat";
+
+// font sizes for small devices
+$h1-sm: 21px;
+$h2-sm: 18px;
+$h3-sm: 15px;
+$h4-sm: 12px;
+
+$p-sm: 0.825em;
+
+// font sizes for tablets devices
+$h1-md: 22px;
+$h2-md: 20px;
+$h3-md: 18px;
+$h4-md: 16px;
+
+$p-md: 1.2em;
+
+// font sizes for desktop and larger devices
+$h1-lg: 1.563rem;
+$h2-lg: 1.25rem;
+$h3-lg: 1rem;
+$h4-lg: 0.8rem;
+
+$p-lg: 2.083em;
+
+$h1: 1.802em;
+
+$h2: 1.602em;
+$h3: 1.424em;
+$h4: 1.266em;
+$h5: 1.125em;

@@ -1,0 +1,189 @@
+@import "./styles/colors";
+// @import "./styles/default";
+@import "./styles/mixins";
+@import "./styles/font";
+@import "./styles/size";
+
+// // components
+@import "./components/Menu/MenuContents/MenuContents.scss";
+@import "./components/Menu/menu.scss";
+@import "./components/Header/Header.scss";
+@import "./components/Hero/Hero.scss";
+@import "./components/Footer/Footer.scss";
+@import "./components/Buttons/buttons.scss";
+
+// // components layouts
+@import "./components/Layouts/Cards/Cards.scss";
+@import "./components/Layouts/Columns/Columns.scss";
+
+// pages
+@import "./pages/Home/Home.scss";
+@import "./pages/About/About.scss";
+@import "./pages/Process/Process.scss";
+@import "./pages/Contacts/Contacts.scss";
+@import "./pages/Courses/Courses.scss";
+// @import "./pages/comingSoon/comingSoon.scss";
+// @import "./pages/comingSoon/";
+
+// pages/countries
+@import "./pages/Countries/Countries.scss";
+@import "./pages/Countries/CountryAustralia/countryAustralia.scss";
+@import "./pages/Countries/CountryCanada/CountryCanada.scss";
+@import "./pages/Countries/CountryJapan/CountryJapan.scss";
+@import "./pages/Countries/CountryKorea/countryKorea.scss";
+@import "./pages/Countries/CountryNewZealand/CountryNewZealand.scss";
+@import "./pages/Countries/CountryUk/CountryUk.scss";
+@import "./pages/Countries/CountryUsa/CountryUsa.scss";
+
+// page global
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 112.5%;
+} /*18px*/
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: rgba($dark, 1);
+  color: $white;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: $dark;
+}
+
+ul li {
+  list-style: none;
+}
+
+h2 {
+  font-size: 42px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  width: 100vw;
+}
+
+.container {
+  height: 100%;
+  margin: 0 auto;
+  padding: 1em 0.625em;
+
+  // // .container {
+  // width: 500px;
+  // max-width: 100%;
+  // padding: 0 15px;
+  // margin: 0 auto;
+  position: relative;
+
+  @include mq("tablet-small") {
+    // width: 640px;
+    padding: 2em 2rem;
+  }
+  @include mq("tablet") {
+    // width: 768px;
+    padding: 3em 3rem;
+  }
+
+  @include mq("tablet-wide") {
+    // width: 1024px;
+    padding: 4em 4rem;
+  }
+
+  @include mq("desktop") {
+    // width: 1248px;
+    padding: 5em 5rem;
+  }
+
+  @include mq("desktop-wide") {
+    // width: 1440px;
+    padding: 6em 6rem;
+  }
+  @include mq("desktop-large") {
+    // width: 1680px;
+    padding: 7em 7rem;
+  }
+}
+
+progress {
+  position: fixed;
+  z-index: 15;
+  top: 0;
+  left: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  border: none;
+  background: transparent;
+
+  &::-webkit-progress-bar {
+    background: $background-color;
+  }
+  &::-webkit-progress-value {
+    background: $secondary;
+  }
+}
+
+.App {
+  height: 100%;
+  background: $background-color;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 10;
+
+  /* fallback height */
+  min-height: 100vh;
+
+  /* new small viewport height for modern browsers */
+  min-height: 100svh;
+
+  > footer {
+    margin-top: auto;
+  }
+}
+
+.is__app__contents {
+  position: relative;
+  // padding: 8em 0em 0em 0em;
+}
+
+// loader
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black background */
+  z-index: 9999; /* make sure loader is on top of everything else */
+
+  &::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid #fff; /* white border */
+    border-top-color: #000; /* black top border to create spinning effect */
+    animation: spin 1s linear infinite; /* spinning animation */
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg); /* full rotation */
+    }
+  }
+}

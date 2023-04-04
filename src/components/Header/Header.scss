@@ -1,0 +1,27 @@
+header {
+  top: 0;
+  // position: fixed;
+  left: 0;
+  width: 100%;
+  // padding: 0.5rem 0;
+  height: 8em;
+  background: rgba($white, 0.92);
+  z-index: 13;
+  will-change: transform;
+  transition: background 0.3s,
+    -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1),
+    background 0.3s;
+  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1),
+    background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+}
+@media (min-width: 768px) {
+  ul {
+    clear: both;
+    li {
+      padding: 0.5em 0;
+    }
+  }
+}
