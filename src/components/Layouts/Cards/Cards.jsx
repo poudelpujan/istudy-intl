@@ -18,8 +18,9 @@ export const AboutCards = () => {
           </span>
           <h4>Our Process</h4>
           <p>
-            Standard chunk of Lorem Ipsum used since the 1500s is showed below
-            for those interested.
+            We strive to create the best possible academic and social atmosphere
+            for every student who wishes to pursue their education overseas,
+            putting in a great deal of effort to achieve this goal.
           </p>
         </div>
       </div>
