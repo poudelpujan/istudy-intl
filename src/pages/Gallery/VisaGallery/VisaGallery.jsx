@@ -4,7 +4,7 @@ import { visaData } from "./Data/Data";
 const VisaGallery = () => {
   return (
     <>
-      <div className="wrapper container">
+      <div className="wrapper">
         {visaData.map((data, index) => (
           <div className="card" key={data.id}>
             <div className="poster">
