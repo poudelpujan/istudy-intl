@@ -40,8 +40,8 @@ export const About = ({ title }) => {
                 educational and overseas placement services.
               </p>
             </div>
+            <MessageColumn />
           </div>
-          <MessageColumn />
         </div>
       </div>
     </section>

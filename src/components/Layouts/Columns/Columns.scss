@@ -225,6 +225,10 @@
 }
 
 .is__messageColumn {
+  position: relative;
+  @include mq("desktop") {
+    top: 10rem;
+  }
   &-title {
     margin-bottom: 40px;
     position: relative;

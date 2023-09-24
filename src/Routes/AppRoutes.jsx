@@ -1,25 +1,26 @@
-import React, { useEffect, Suspense } from "react";
-import { Route, Routes, Navigate, useLocation } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 
-import Home from "../pages/Home/Home";
 import { About } from "../pages/About/About";
-import Process from "../pages/Process/Process";
-import Gallery from "../pages/Gallery/Gallery";
 import ContactUs from "../pages/Contacts/ContactUs";
-import PageNotFound from "../pages/PageNotFound/PageNotFound";
-import CountryUsa from "../pages/Countries/CountryUsa/CountryUsa";
-import CountryCanada from "../pages/Countries/CountryCanada/CountryCanada";
 import CountryAustralia from "../pages/Countries/CountryAustralia/CountryAustralia";
-import CountryNewZealand from "../pages/Countries/CountryNewZealand/CountryNewZealand";
+import CountryCanada from "../pages/Countries/CountryCanada/CountryCanada";
 import CountryJapan from "../pages/Countries/CountryJapan/CountryJapan";
 import CountryKorea from "../pages/Countries/CountryKorea/CountryKorea";
+import CountryNewZealand from "../pages/Countries/CountryNewZealand/CountryNewZealand";
 import CountryUk from "../pages/Countries/CountryUk/CountryUk";
+import CountryUsa from "../pages/Countries/CountryUsa/CountryUsa";
 import CoursesGed from "../pages/Courses/CoursesGed/CoursesGed";
-import CoursesToefl from "../pages/Courses/CoursesToefl/CoursesToefl";
-import CoursesSat from "../pages/Courses/CoursesSat/CoursesSat";
-import CoursesPte from "../pages/Courses/CoursesPte/CoursesPte";
 import CoursesIelts from "../pages/Courses/CoursesIelts/CoursesIelts";
+import CoursesPte from "../pages/Courses/CoursesPte/CoursesPte";
+import CoursesSat from "../pages/Courses/CoursesSat/CoursesSat";
+import CoursesToefl from "../pages/Courses/CoursesToefl/CoursesToefl";
+import Gallery from "../pages/Gallery/Gallery";
+import Home from "../pages/Home/Home";
+import PageNotFound from "../pages/PageNotFound/PageNotFound";
+import Process from "../pages/Process/Process";
 import { ScrollToTop } from "./ScrollToTop";
+import VisaGallery from "../pages/Gallery/VisaGallery/VisaGallery";
 
 const AppRoutes = () => {
   const location = useLocation();
@@ -41,6 +42,11 @@ const AppRoutes = () => {
         <Route path="/about-us/" element={<About title="About Us" />} />
         <Route path="/process/" element={<Process title="Process" />} />
         <Route path="/gallery/" element={<Gallery title="Gallery" />} />
+        <Route
+          // path="/gallery/:id/"
+          path="/gallery/visa-gallery/"
+          element={<VisaGallery title="Visa Granted" />}
+        />
 
         {/* study in abroad routes */}
         <Route
