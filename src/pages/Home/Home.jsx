@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Hero from "../../components/Hero/Hero";
-import Header from "../../components/Header/Header";
+import { Hero } from "../../components/Hero/Hero";
 import { AboutCards } from "../../components/Layouts/Cards/Cards";
 import {
   ColumnAbout,

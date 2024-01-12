@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Menu from "../Menu/menu";
-import { Link } from "react-router-dom";
+
 import background from "../../assets/images/hero.jpg";
 import { AboutButton } from "../Buttons/buttons";
 
-const Header = () => {
+export const Hero = () => {
   return (
     <main className="main">
       <section className="container section banner banner-section">
@@ -25,4 +25,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+// export default Header;

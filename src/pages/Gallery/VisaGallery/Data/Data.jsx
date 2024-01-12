@@ -5,6 +5,7 @@ import vng from "../../../../assets/images/visa/neeta-visa.jpg";
 import vsk from "../../../../assets/images/visa/santosh-visa.jpg";
 import vsg from "../../../../assets/images/visa/sarju-visa.jpg";
 import vgn from "../../../../assets/images/visa/ganesh-visa.jpg";
+import vcpy from "../../../../assets/images/visa/chandan-visa.jpeg";
 
 export const visaData = [
   {
@@ -42,5 +43,10 @@ export const visaData = [
     id: 7,
     image: vgn,
     alt: "travel visa granted for new zealand",
+  },
+  {
+    id: 8,
+    image: vcpy,
+    alt: "student visa granted for canada",
   },
 ];
