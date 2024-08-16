@@ -7,6 +7,7 @@ import vsg from "../../../../assets/images/visa/sarju-visa.jpg";
 import vgn from "../../../../assets/images/visa/ganesh-visa.jpg";
 import vcpy from "../../../../assets/images/visa/chandan-visa.jpeg";
 import vkkt from "../../../../assets/images/visa/krishna-kumar-visa.jpeg";
+import vpa from "../../../../assets/images/visa/priya-visa.jpeg";
 
 export const visaData = [
   {
@@ -54,5 +55,10 @@ export const visaData = [
     id: 9,
     image: vkkt,
     alt: "student visa granted for south korea",
+  },
+  {
+    id: 10,
+    image: vpa,
+    alt: "student visa granted for usa",
   },
 ];
