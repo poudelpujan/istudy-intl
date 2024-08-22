@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Poppins&display=swap");
+
+.coming_soon-section {
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  background: $secondary;
+}
+
+.alert > .start-icon {
+  margin-right: 5px;
+}
+
+.alert-simple.alert-primary {
+  padding: 20px 0;
+}
+
+.alertprimary {
+  font-size: 18px;
+  text-shadow: none;
+}
+
+.alert:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: calc(100% - 44px);
+  border-left: 1px solid;
+  border-right: 2px solid;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  height: 50px;
+}
+.alert:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: calc(100% - 44px);
+  border-right: 1px solid;
+  border-left: 2px solid;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  height: 50px;
+}
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  padding: 10px;
+}
+
+/* Content inside the marquee */
+.marquee-content {
+  display: flex;
+  gap: 20rem;
+  white-space: nowrap;
+  animation: marquee 40s linear infinite;
+
+  a {
+    color: $white;
+  }
+}
+
+/* Keyframes for seamless scrolling */
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

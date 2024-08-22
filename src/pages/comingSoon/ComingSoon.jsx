@@ -1,51 +1,54 @@
 import React from "react";
-import background from "../../assets/Background-map.svg";
-import {
-  MdOutlineAlternateEmail,
-  MdOutlineLocalPhone,
-  MdOutlineLocationOn,
-} from "react-icons/md";
+
+import { FaFacebookF, FaTwitter } from "react-icons/fa";
+
 const ComingSoon = () => {
   return (
-    <div>
-      <img src={background} className="background-map" alt="background map" />
-      <section className="coming_soon-section">
-        <div className="container">
-          <div className="coming-soon">
-            <h2>
-              Discover your path to a brighter future. Our educational
-              consultancy iStudy international there for you and
-              <span className=""> Our website is coming soon! </span> Stay tuned
-              for personalized guidance from experienced professional, tailored
-              to your academic and career goals. From university to visa
-              application, we'll be with you in every step of the way.
-            </h2>
-          </div>
-          <div className="contacts">
-            <div className="contact">
-              <span className="label">
-                Email <MdOutlineAlternateEmail />
-              </span>
-              <a href="#">
-                shaileshistudy2010@gmail.com | istudyintl2010@gmail.com
-              </a>
-            </div>
-            <div className="contact">
-              <span className="label">
-                Phone <MdOutlineLocalPhone />
-              </span>
-              <a href="#">01-5918853 | +977-9801848237</a>
-            </div>
-            <div className="contact">
-              <span className="label">
-                Location <MdOutlineLocationOn />
-              </span>
-              <a href="">Bagbazar, Kathmandu, Opposite of Everest Bank</a>
-            </div>
-          </div>
+    // <div className="container">
+    <div className="card">
+      <div className="coming-soon_header">
+        <div className="coming-soon_social">
+          <a
+            href="https://facebook.com"
+            title="Facebook"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="coming-soon_link"
+          >
+            <FaFacebookF className="icon" />
+          </a>
+          <a
+            href="https://twitter.com"
+            title="Twitter"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="coming-soon_link"
+          >
+            <FaTwitter className="icon" />
+          </a>
         </div>
-      </section>
+      </div>
+      <div className="coming-soon_content">
+        <div className="title-holder">
+          <h1>
+            <strong>🎉 Exciting News!!!</strong>.
+          </h1>
+          <h5>
+            🎉 Our new branch is opening on 7<sup>th</sup> of September , 2024
+            (Bhadra 22<sup>nd</sup>, 2081) in Sallaghari, Bhaktapur! Stay
+            <br />
+            tuned for the special offers. Thank you for your continued support!
+            🚀
+          </h5>
+        </div>
+      </div>
+      <div className="coming-soon_footer">
+        <a href="mailto:user@example.com" className="coming-soon_link">
+          <div className="cta">Send us an email</div>
+        </a>
+      </div>
     </div>
+    // </div>
   );
 };
 
