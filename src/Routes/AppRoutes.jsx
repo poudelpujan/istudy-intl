@@ -21,7 +21,6 @@ import PageNotFound from "../pages/PageNotFound/PageNotFound";
 import Process from "../pages/Process/Process";
 import { ScrollToTop } from "./ScrollToTop";
 import VisaGallery from "../pages/Gallery/VisaGallery/VisaGallery";
-import ComingSoon from "../pages/comingSoon/ComingSoon";
 
 const AppRoutes = () => {
   const location = useLocation();
@@ -93,10 +92,6 @@ const AppRoutes = () => {
         />
 
         <Route path="/contact-us/" element={<ContactUs title="Contact Us" />} />
-        <Route
-          path="/coming-soon/"
-          element={<ComingSoon title="New Branch" />}
-        />
 
         <Route path="/404" element={<PageNotFound />} title="Page Not Found" />
         <Route

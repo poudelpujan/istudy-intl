@@ -10,8 +10,6 @@ import Footer from "./components/Footer/Footer";
 import AppRoutes from "./Routes/AppRoutes";
 import Header from "./components/Header/Header";
 
-import Marquee from "./components/Marquee/Marquee";
-
 function App() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -26,7 +24,6 @@ function App() {
   return (
     <div className="App">
       <progress max="100" value="0"></progress>
-      <Marquee />
       <Header />
       <div className="is__app__contents">
         <AppRoutes />

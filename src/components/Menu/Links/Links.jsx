@@ -46,8 +46,4 @@ export const internalLinks = [
     url: "/contact-us",
     component: "contact us",
   },
-  {
-    url: "/coming-soon",
-    component: "New Branch",
-  },
 ];
