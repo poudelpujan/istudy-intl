@@ -10,6 +10,7 @@ import AppRoutes from "./Routes/AppRoutes";
 import Header from "./components/Header/Header";
 
 import Marquee from "./components/Marquee/Marquee";
+import Modal from "./components/Modal/Modal";
 
 function App() {
   useEffect(() => {
@@ -24,6 +25,7 @@ function App() {
 
   return (
     <div className="App">
+      <Modal />
       <progress max="100" value="0"></progress>
       <Marquee />
       <Header />
