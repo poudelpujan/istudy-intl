@@ -8,8 +8,8 @@ const Marquee = () => {
           <p class="message">
             <span>
               <strong>🎉 Exciting News !!!&nbsp;&nbsp;</strong>
-              🎉 Our new branch is opening on 7<sup>th</sup> of September , 2024
-              (Bhadra 22<sup>nd</sup>, 2081) in Sallaghari, Bhaktapur! Stay
+              🎉 Our new branch is opening on 31<sup>st</sup> of August , 2024
+              (Bhadra 15<sup>th</sup>, 2081) in Sallaghari, Bhaktapur! Stay
               tuned for the special offers. Thank you for your continued
               support! 🚀
             </span>
