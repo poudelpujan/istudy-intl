@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import {
   MdOutlineAlternateEmail,
@@ -9,8 +8,6 @@ import {
 const ContactUs = () => {
   return (
     <React.Fragment>
-    
-
       <section className="contact-section">
         <div className="container">
           <div className="contact-heading">

@@ -1,5 +1,3 @@
-import React from "react";
-
 const CoursesGed = ({ title }) => {
   return (
     <section className="is__coursesSection">

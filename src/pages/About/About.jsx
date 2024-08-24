@@ -1,4 +1,3 @@
-import React from "react";
 import { MessageColumn } from "../../components/Layouts/Columns/Columns";
 
 export const About = ({ title }) => {

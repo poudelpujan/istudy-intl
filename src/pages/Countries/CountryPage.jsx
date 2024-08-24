@@ -1,4 +1,3 @@
-import React from "react";
 import { Routes, Route } from "react-router-dom";
 import CountryCanada from "./CountryCanada/CountryCanada";
 import CountryAustralia from "./CountryAustralia/CountryAustralia";

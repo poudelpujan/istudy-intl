@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 import cS from "../../assets/images/coming-soon.jpeg";
 import ModalComp from "./ModalComp";

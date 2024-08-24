@@ -1,33 +1,7 @@
-import React from "react";
-
-import { FaFacebookF, FaTwitter } from "react-icons/fa";
-
 const ComingSoon = () => {
   return (
     <div className="container">
       <div className="coming-soon_card">
-        <div className="coming-soon_header">
-          <div className="coming-soon_social">
-            <a
-              href="https://facebook.com"
-              title="Facebook"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="coming-soon_link"
-            >
-              <FaFacebookF className="icon" />
-            </a>
-            <a
-              href="https://twitter.com"
-              title="Twitter"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="coming-soon_link"
-            >
-              <FaTwitter className="icon" />
-            </a>
-          </div>
-        </div>
         <div className="coming-soon_content">
           <div className="title-holder">
             <h1>
@@ -43,7 +17,10 @@ const ComingSoon = () => {
           </div>
         </div>
         <div className="coming-soon_footer">
-          <a href="mailto:user@example.com" className="coming-soon_link">
+          <a
+            href="mailto:istudyintl2010@gmail.com"
+            className="coming-soon_link"
+          >
             <div className="cta">Send us an email</div>
           </a>
         </div>

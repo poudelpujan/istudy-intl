@@ -1,4 +1,3 @@
-import React from "react";
 import MenuContents from "../Menu/MenuContents/MenuContents";
 
 const Header = () => {

@@ -6,8 +6,7 @@ export const galleryData = [
     id: "#1",
     number: "01",
     img: galleryBg,
-    location: "Shibuya, Japan",
-    headline: "Visa Granted",
+    headline: "Visa Granted ",
     alt: "Visa Approved",
   },
 ];

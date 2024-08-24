@@ -1,4 +1,3 @@
-import React from "react";
 import { visaData } from "./Data/Data";
 
 const VisaGallery = () => {

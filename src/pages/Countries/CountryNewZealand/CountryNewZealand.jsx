@@ -1,5 +1,3 @@
-import React from "react";
-
 import { studyAbroadData } from "../../../components/Layouts/Cards/cardsContents/CardsContents";
 const CountryNewZealand = () => {
   const countryData = studyAbroadData.find(

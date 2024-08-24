@@ -1,4 +1,3 @@
-import React from "react";
 import Ielts from "../../../assets/svg/ielts-logo.svg";
 import Pte from "../../../assets/svg/pte-logo.svg";
 import Ged from "../../../assets/svg/ged-logo.svg";

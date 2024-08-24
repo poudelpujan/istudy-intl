@@ -1,4 +1,3 @@
-import React from "react";
 import { AboutButton } from "../../Buttons/buttons";
 import { CourseCards } from "../../Layouts/Cards/Cards";
 import { StudyAbroadCards } from "../Cards/Cards";

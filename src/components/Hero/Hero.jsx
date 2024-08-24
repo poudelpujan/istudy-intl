@@ -1,6 +1,3 @@
-import React, { useState, useEffect } from "react";
-import Menu from "../Menu/menu";
-
 import background from "../../assets/images/hero.jpg";
 import { AboutButton } from "../Buttons/buttons";
 
