@@ -48,6 +48,6 @@ export const internalLinks = [
   },
   {
     url: "/coming-soon",
-    component: "New Branch",
+    component: "Bhaktapur Branch",
   },
 ];

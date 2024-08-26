@@ -7,7 +7,7 @@ import {
 
 const ContactUs = () => {
   return (
-    <React.Fragment>
+    <>
       <section className="contact-section">
         <div className="container">
           <div className="contact-heading">
@@ -46,7 +46,7 @@ const ContactUs = () => {
           </div>
         </div>
       </section>
-    </React.Fragment>
+    </>
   );
 };
 
