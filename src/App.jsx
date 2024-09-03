@@ -25,9 +25,9 @@ function App() {
 
   return (
     <div className="App">
-      <Modal />
+      {/* <Modal /> */}
       <progress max="100" value="0"></progress>
-      <Marquee />
+      {/* <Marquee /> */}
       <Header />
       <div className="is__app__contents">
         <AppRoutes />

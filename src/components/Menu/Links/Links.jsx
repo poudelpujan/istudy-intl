@@ -47,7 +47,7 @@ export const internalLinks = [
     component: "contact us",
   },
   {
-    url: "/coming-soon",
+    url: "/branch/",
     component: "Bhaktapur Branch",
   },
 ];
