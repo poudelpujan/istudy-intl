@@ -17,65 +17,65 @@ export const branchData = [
   {
     id: 1,
     image: bhbranch1,
-    alt: "student visa granted for canada",
+    alt: "bhaktapur branch",
   },
 
   {
     id: 2,
     image: bhbranch2,
-    alt: "student visa granted for uk",
+    alt: "bhaktapur branch",
   },
   {
     id: 3,
     image: bhbranch3,
-    alt: "student visa granted for uk",
+    alt: "bhaktapur branch",
   },
   {
     id: 4,
     image: bhbranch4,
-    alt: "student visa granted for uk",
+    alt: "bhaktapur branch",
   },
   {
     id: 5,
     image: bhbranch5,
-    alt: "visa granted for uk",
+    alt: 'bhaktapur branch',
   },
   {
     id: 6,
     image: bhbranch6,
-    alt: "student visa granted for uk",
+    alt: "bhaktapur branch",
   },
   {
     id: 7,
     image: bhbranch7,
-    alt: "travel visa granted for new zealand",
+    alt: "travel bhaktapur branch",
   },
   {
     id: 8,
     image: bhbranch8,
-    alt: "student visa granted for canada",
+    alt: "bhaktapur branch",
   },
   {
     id: 9,
     image: bhbranch9,
-    alt: "student visa granted for south korea",
+    alt: "student bhaktapur branch",
   },
   {
     id: 10,
     image: bhbranch10,
-    alt: "student visa granted for usa",
+    alt: "bhaktapur branch",
   },
     {
     id: 11,
     image: bhbranch11,
-    alt: "student visa granted for usa",
+    alt: "bhaktapur branch",
   },  {
     id: 12,
     image: bhbranch12,
-    alt: "student visa granted for usa",
+    alt: "bhaktapur branch",
   },  {
     id: 13,
     image: bhbranch13,
-    alt: "student visa granted for usa",
+    alt: "bhaktapur branch",
   },
 ];
