@@ -9,6 +9,7 @@ import vcpy from "../../../../assets/images/visa/chandan-visa.jpeg";
 import vkkt from "../../../../assets/images/visa/krishna-kumar-visa.jpeg";
 import vpa from "../../../../assets/images/visa/priya-visa.jpeg";
 import vndt from "../../../../assets/images/visa/nigma-visa.jpeg";
+import vrp from "../../../../assets/images/visa/rajaram-visa.jpeg";
 
 
 export const visaData = [
@@ -65,6 +66,11 @@ export const visaData = [
   }, {
     id: 11,
     image: vndt,
+    alt: "student visa granted for uk",
+  },
+  {
+    id: 12,
+    image: vrp,
     alt: "student visa granted for uk",
   },
 ];
